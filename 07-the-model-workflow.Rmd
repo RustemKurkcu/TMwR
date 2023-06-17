@@ -152,7 +152,7 @@ When the model is fit, the specification assembles these data, unaltered, into a
 ```{r workflows-add-variables-fit}
 fit(lm_wflow, ames_train)
 ```
-
+s
 If you would like the underlying modeling method to do what it would normally do with the data, `add_variables()` can be a helpful interface. As we will see in Section \@ref(special-model-formulas), it also facilitates more complex modeling specifications. However, as we mention in the next section, models such as `glmnet` and `xgboost` expect the user to make indicator variables from factor predictors. In these cases, a recipe or formula interface will typically be a better choice. 
 
 In the next chapter, we will look at a more powerful preprocessor (called a _recipe_) that can also be added to a workflow. 
